@@ -19,9 +19,9 @@ type task struct {
 }
 
 func (t *task) Task() {
-	log.Println("Task: ", t.id, "started")
+	log.Println("Task:", t.id, "started")
 	time.Sleep(time.Duration(rand.Intn(5000)) * time.Millisecond)
-	log.Println("Task: ", t.id, "finished")
+	log.Println("Task:", t.id, "finished")
 }
 
 func main() {
